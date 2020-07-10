@@ -1,0 +1,240 @@
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 90, 100);
+$sides: (top, bottom, left, right);
+$primary: #000000;
+$secondary: #47546a;
+$darkgray: #C4CBDB;
+$gray: #7D7D7D;
+$blue: #4D89FF;
+$red: #F85454;
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+@font-face {
+    font-family: "arial-bold";
+    src: url('../fonts/arlrdbd.eot');
+    src: url('../fonts/arlrdbd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/arlrdbd.svg#Arial Rounded MT Bold') format('svg'),
+        url('../fonts/arlrdbd.woff') format('woff'),
+        url('../fonts/arlrdbd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: $primary;
+    font-size: 14px;
+    background: #F9F9F9;
+}
+
+a {
+    text-decoration: none;
+    color: $gray;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        text-decoration: none;
+        color: $blue;
+    }
+}
+
+
+
+.header {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+.header-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: "arial-bold";
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+}
+
+.tel {
+    font-size: 20px;
+    color: #424242;
+    margin-left: 55px;
+
+    small {
+        font-size: 14px;
+        color: $gray;
+    }
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lang {
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+
+    li {
+        margin: 0 15px;
+    }
+}
+
+.down-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+
+    .catalog_btn {
+        display: flex;
+        background: $blue;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 14px;
+        align-items: center;
+        width: 170px;
+        padding: 8px;
+        justify-content: space-between;
+        margin-right: 80px;
+
+        &:hover {
+            text-decoration: none;
+            background-color: darken($blue, 30%);
+
+        }
+    }
+}
+
+.search_input {
+    margin-left: auto;
+    flex-grow: 1;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    background: url(../img/search.svg) 10px 9px no-repeat #FFFFFF;
+    padding: 7px 15px 7px 30px;
+    line-height: 20px;
+}
+
+.menu-down {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+
+    li {
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    }
+}
+
+.red {
+    color: $red;
+}
+
+.blue {
+    color: $blue;
+}
+
+.categories-menu {
+    position: absolute;
+    z-index: 41;
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.11);
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.categories-menu-wrap {
+    transform: translateZ(0);
+    max-height: calc(100vh - 250px);
+    transition: max-height .2s ease-out;
+    display: block;
+    height: 100%;
+}
+
+.categories-menu-wrap1 {
+    display: flex;
+}
+
+.categories-menu-block {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    min-width: 270px;
+    padding: 20px 0;
+
+}
+
+.categories-menu-block:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 0;
+    width: 1px;
+    background-color: #eee;
+}
+
+.categories-menu-link {
+    a {
+        display: block;
+        padding: 4px 17px;
+        color: #202020;
+        transition: none;
+        position: relative;
+
+        &:hover,&.active {
+            background-color: $blue;
+            color: #fff;
+        }
+
+    }
+
+    &.have-child a:after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid transparent;
+        border-right: 0;
+        border-bottom: .3em solid transparent;
+        border-left: .3em solid;
+        position: absolute;
+        right: 17px;
+        top: 10px;
+    }
+}
