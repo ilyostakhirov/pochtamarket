@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>PochtaShop</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header-container">
+            <a href="#" class="navbar-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-justified" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg></a>
             <div class="top-bar">
                 <a href="#" class="logo">PochtaMarket.uz</a>
                 <a href="#" class="tel"><small>+998</small> 71 245 00 34</a>
@@ -28,8 +36,8 @@
                 <a class="catalog_btn" href="#"><span>Каталог товаров</span><img src="img/database.svg" alt=""></a>
                 <input type="text" class="search_input" placeholder="Поиск по сайту...">
                 <ul class="menu-down">
-                    <li><a class="red" href="#">Регистрация</a></li>
-                    <li><a class="blue" href="#">Войти</a></li>
+                    <li class="reg"><a class="red" href="#">Регистрация</a></li>
+                    <li class="login"><a class="blue" href="#">Войти</a></li>
                     <li class="ml-40"><a href="#"><img src="img/message.svg" alt=""></a></li>
                     <li><a href="#"><img src="img/heart.svg" alt=""></a></li>
                     <li><a href="#"><img src="img/cart.svg" alt=""></a></li>
@@ -81,17 +89,535 @@
                 </div>
             </div>
         </div>
+        <div class="mobile-menu">
+            <div class="toggle-block-backdrop"></div>
+            <div class="top-nav">
+                <div class="top-nav-close js-close-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg></div>
+                <div class="top-nav-content">
+                    <ul class="menu">
+
+                        <li>
+                            <div class="section-title"><a class="red" href="#">Регистрация</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a class="blue" href="#">Войти</a></div>
+                        </li>
+                        <li class="top-delimeter"></li>
+                        <li class="submenu-toggle">
+                            <div class="section-title">
+                                <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                            </div>
+                            <div class="section-content">
+                                <ul class="submenu">
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="submenu-toggle">
+                            <div class="section-title">
+                                <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                            </div>
+                            <div class="section-content">
+                                <ul class="submenu">
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="submenu-toggle">
+                            <div class="section-title">
+                                <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                            </div>
+                            <div class="section-content">
+                                <ul class="submenu">
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="submenu-toggle">
+                            <div class="section-title">
+                                <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                            </div>
+                            <div class="section-content">
+                                <ul class="submenu">
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu-toggle">
+                                        <div class="section-title">
+                                            <a href="#" class="js-toggle-block ddl_menu_link">Электроника</a>
+                                        </div>
+                                        <div class="section-content">
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                                <li>
+                                                    <a href="section-title ddl_menu_link">Мобильные телефоны</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="top-delimeter"></li>
+                        <li>
+                            <div class="section-title"><a href="#">Продавай вместе с нами</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a href="#">Приложение</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a href="#">Оплата</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a href="#">Доставка</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a href="#">Помощь</a></div>
+                        </li>
+                        <li class="top-delimeter"></li>
+                        <li>
+                            <div class="section-title"><a href="#">Русский</a></div>
+                        </li>
+                        <li class="top-delimeter"></li>
+                        <li>
+                            <div class="section-title"><a href="#">+998 71 245 00 34</a></div>
+                        </li>
+                        <li>
+                            <div class="section-title"><a href="#">г.Ташкент</a></div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="main login">
         <div class="container">
             <div class="banner mt-30 mb-30"><img src="img/banner.png" alt=""></div>
-            <div class="row mb-30">
+            <div class="banner-2 row mb-30">
                 <div class="col-md-6"><img src="img/l-banner.png" alt=""></div>
                 <div class="col-md-6"><img src="img/r-banner.png" alt=""></div>
             </div>
             <div class="section_title">Новинки</div>
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row products">
+                <div class="col-md-3 col-6">
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="product_img_link" href="#"><img src="image/product.png" alt=""></a>
@@ -113,7 +639,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="product_img_link" href="#"><img src="image/product1.png" alt=""></a>
@@ -134,7 +660,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="product_img_link" href="#"><img src="image/product2.png" alt=""></a>
@@ -156,7 +682,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6">
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="product_img_link" href="#"><img src="image/product3.png" alt=""></a>
@@ -179,7 +705,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-30 mb-30">
+            <div class="row mt-30 mb-30 banner-3">
                 <div class="col-md-4">
                     <img src="image/banner.png" alt="">
                 </div>
@@ -190,7 +716,7 @@
                     <img src="image/banner2.png" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row blocks-3">
                 <div class="col-md-4">
                     <div class="block_title">Популярные товары</div>
                     <div class="block-w small_product">
@@ -416,7 +942,7 @@
     <section class="features mt-60">
         <div class="container">
             <div class="features-items row">
-                <div class="features-item col-md-3">
+                <div class="features-item col-md-3 col-6">
                     <div class="features-icon">
                         <img src="img/car.svg" alt="">
                     </div>
@@ -424,7 +950,7 @@
                         Доставка по всей республике
                     </div>
                 </div>
-                <div class="features-item col-md-3">
+                <div class="features-item col-md-3 col-6">
                     <div class="features-icon">
                         <img src="img/safety.svg" alt="">
                     </div>
@@ -432,7 +958,7 @@
                         Гарантированная сделка
                     </div>
                 </div>
-                <div class="features-item col-md-3">
+                <div class="features-item col-md-3 col-6">
                     <div class="features-icon">
                         <img src="img/credit-card.svg" alt="">
                     </div>
@@ -440,7 +966,7 @@
                         Оплата онлайн с UzCard и Humocard
                     </div>
                 </div>
-                <div class="features-item col-md-3">
+                <div class="features-item col-md-3 col-6">
                     <div class="features-icon">
                         <img src="img/shop.svg" alt="">
                     </div>
@@ -454,14 +980,14 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-5 col-sm-7">
+                <div class="col-lg-3 col-md-5 col-sm-12">
                     <div class="widget">
                         <a href="#" class="f_logo mb-15">PochtaMarket.uz</a>
                         <p>Документы и связанные с ними графические изображения, расположенные на Сайте, могут включать неточности или орфографические ошибки. Изменение информации на Сайте производится периодически.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="col-lg-2 col-md-3 col-6">
                     <div class="widget">
                         <div class="widget_title">
                             Почта.Маркетплейс
@@ -475,7 +1001,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="col-lg-2 col-md-4 col-6">
                     <div class="widget">
                         <div class="widget_title">
                             Продавцам
@@ -490,7 +1016,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-5 col-sm-6">
+                <div class="col-lg-2 col-md-5 col-12">
                     <div class="widget">
                         <div class="widget_title">
                             Покупателям
@@ -506,9 +1032,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-7 col-sm-12">
+                <div class="col-lg-3 col-md-7 col-12">
                     <div class="widget">
-                        <p class="copyright">©2020 ООО "POCHTA".<br>Авторские права защищены.</p>
+                        <p class="copyright">© 2020 ООО "POCHTA".<br>Авторские права защищены.</p>
                     </div>
                 </div>
             </div>

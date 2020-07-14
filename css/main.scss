@@ -57,9 +57,9 @@ a {
 }
 
 .header-container {
-    max-width: 1260px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .top-bar {
@@ -162,11 +162,11 @@ ul {
 }
 
 .red {
-    color: $red;
+    color: $red !important;
 }
 
 .blue {
-    color: $blue;
+    color: $blue !important;
 }
 
 .categories-menu {
@@ -269,6 +269,7 @@ img {
     background: #FFFFFF;
     border: 1px solid #F4F4F4;
     border-radius: 5px;
+    height: 100%;
     transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
     transition-delay: .1s;
 
@@ -411,10 +412,10 @@ img {
     border-radius: 0 0 5px 5px;
 
     a {
-        height: 45px;
-        line-height: 41px;
+        height: 34px;
+        line-height: 34px;
         display: inline-block;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 500;
         text-transform: uppercase;
         border-radius: 4px;
@@ -581,9 +582,191 @@ img {
         }
     }
 }
-p.copyright{
+
+p.copyright {
     text-align: right;
     font-size: 14px;
     line-height: 24px;
     color: #3A3A3A;
+}
+
+.toggle-block-backdrop {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    display: none;
+    background: #1f1f1f;
+    opacity: .2;
+}
+
+.toggle-block-backdrop.active {
+    display: block;
+}
+
+.top-nav {
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    bottom: -100px;
+    left: 0;
+    width: calc(100% - 40px);
+    padding: 0 0 100px;
+    background: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    transform: translate(-100%);
+    transition: transform .3s ease-out;
+}
+
+.top-nav.active {
+    transform: translate(0);
+}
+
+.top-nav-close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    display: none;
+    width: 40px;
+    height: 37px;
+    background: #fff;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+}
+
+.top-nav.active .top-nav-close {
+    display: block;
+}
+
+.top-nav-content {
+    overflow: auto;
+    height: 100%;
+    padding: 18px 10px 10px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.top-nav .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.top-nav .menu>li {
+    display: block;
+    margin-bottom: 19px;
+}
+
+.top-nav .menu .section-title {
+    font-size: 15px;
+}
+
+.top-nav .menu .submenu-toggle .section-title a {
+    position: relative;
+}
+
+.top-nav .menu a {
+    display: block;
+    color: inherit;
+}
+
+.top-nav .menu .submenu-toggle .section-title a:after {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid transparent;
+    border-right: 0;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
+}
+
+.top-nav .menu li.bottom-delimeter,
+.top-nav .menu li.top-delimeter {
+    margin-left: -10px;
+    margin-right: -10px;
+    border-top: 1px solid #eee;
+}
+
+.top-nav .menu li.top-delimeter {
+    margin-bottom: 17px;
+}
+
+.top-nav .menu .section-content {
+    display: none;
+}
+
+.top-nav .menu .submenu {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    list-style: none;
+}
+
+.top-nav .menu .submenu li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.top-nav .menu .submenu-toggle.active>.section-content {
+    overflow: auto;
+    display: block;
+    max-height: calc(100% - 53px);
+    padding: 0 10px;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.top-nav .menu .submenu-toggle.active {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    transition: transform .3s ease-out;
+}
+
+.top-nav .menu .submenu-toggle.active>.section-title {
+    margin: 0 0 15px;
+    padding: 9px 0 8px;
+    background: #f6f6f6;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.top-nav .menu .submenu-toggle.active>.section-title a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 10px 5px 28px;
+}
+
+.top-nav .menu .submenu-toggle.active>.section-title a:after {
+    display: inline-block;
+    margin-right: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid transparent;
+    border-right: .3em solid;
+    border-bottom: .3em solid transparent;
+    border-left: transparent;
+    top: 14px;
+    left: 12px;
+    right: auto;
+    transform: translateY(-50%);
 }
