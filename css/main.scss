@@ -54,6 +54,7 @@ a {
 .header {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     background-color: #fff;
+    position: relative;
 }
 
 .header-container {
@@ -628,7 +629,7 @@ p.copyright {
 .top-nav-close {
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -38px;
     display: none;
     width: 40px;
     height: 37px;
@@ -769,4 +770,78 @@ p.copyright {
     left: 12px;
     right: auto;
     transform: translateY(-50%);
+}
+
+.search-block {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: -1000px;
+    right: auto;
+    display: block;
+    margin-top: 1px;
+    background: #fff;
+
+    &.active {
+        left: 0;
+        right: 0;
+    }
+
+    .search-form {
+        border-bottom: 1px solid #efefef;
+    }
+    form{
+        position:relative;
+    }
+    .form-control {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        font-weight: 500;
+        width: 100%;
+        padding: 9px 15px;
+        box-shadow: none;
+        border-color: #4b6ecd;
+    }
+
+    .search-close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 6px 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .search-result {
+        display: block;
+    }
+
+    .search-result-group {
+        border-top: 1px solid #eee;
+        padding: 5px 0;
+    }
+
+    .group-title {
+        display: block;
+        color: #9b9b9b;
+        font-size: 11px;
+        padding: 0 10px;
+    }
+
+    .group-items a {
+        display: block;
+        padding: 5px 15px;
+        color: inherit;
+            font-size: 13px;
+    line-height: 1;
+    }
+
+    .group-items mark {
+        display: inline;
+        padding: 0;
+        background: transparent;
+        color: #9b9b9b;
+    }
 }

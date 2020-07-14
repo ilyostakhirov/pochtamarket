@@ -4,7 +4,11 @@ const catalogBtn = document.querySelector('.catalog_btn'),
     mobileMenu = document.querySelector('.top-nav'),
     mobileMenuBg = document.querySelector('.toggle-block-backdrop'),
     mobileMenuUl = document.querySelector('.top-nav-content .menu'),
-    closeBtn = document.querySelector('.top-nav-close')
+    closeBtn = document.querySelector('.top-nav-close'),
+    mobileSearch = document.querySelector('.search-block'),
+    searchCloseBtn = document.querySelector('.search-close'),
+    searchBtn = document.querySelector('.search_btn')
+
 
 catalogBtn.addEventListener('click', (e) => {
     catalogBtn.classList.toggle('active')
@@ -57,3 +61,12 @@ mobileMenuUl.addEventListener('click', e => {
     }
 
 }, false);
+
+searchBtn.addEventListener('click', (e) => {
+    mobileSearch.classList.toggle('active')
+    e.stopPropagation()
+})
+
+searchCloseBtn.addEventListener('click', (e) => {
+    mobileSearch.classList.remove('active')
+})

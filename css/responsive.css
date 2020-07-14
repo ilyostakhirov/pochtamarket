@@ -23,10 +23,12 @@
     font-size: 13px; } }
 
 @media only screen and (min-width: 992px) {
-  .navbar-toggle {
+  .navbar-toggle, .menu-down li.search_btn {
     display: none; } }
 
 @media only screen and (max-width: 992px) {
+  .logo {
+    font-size: 15px; }
   .top-bar {
     margin: 0 auto; }
     .top-bar .menu,
@@ -52,7 +54,9 @@
   .menu-down {
     margin: 0; }
   .menu-down li {
-    margin: 0 10px !important; }
+    margin: 0 8px !important; }
+    .menu-down li.search_btn {
+      display: block; }
   .product_img_link img {
     height: 90px; }
   .section_title {
