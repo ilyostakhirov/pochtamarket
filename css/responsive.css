@@ -23,7 +23,8 @@
     font-size: 13px; } }
 
 @media only screen and (min-width: 992px) {
-  .navbar-toggle, .menu-down li.search_btn {
+  .navbar-toggle,
+  .menu-down li.search_btn {
     display: none; } }
 
 @media only screen and (max-width: 992px) {
@@ -98,4 +99,8 @@
   .features-item .features-content {
     color: #FFFFFF;
     font-size: 12px;
-    font-weight: bold; } }
+    font-weight: bold; }
+  .nav-tabs-line .nav-item {
+    font-size: 13px; }
+  .tab-content {
+    padding: 15px; } }

@@ -41,16 +41,21 @@
         font-size: 13px;
     }
 }
+
 @media only screen and (min-width: 992px) {
-    .navbar-toggle,.menu-down li.search_btn {
-        display:none;
+
+    .navbar-toggle,
+    .menu-down li.search_btn {
+        display: none;
     }
 
 }
+
 @media only screen and (max-width: 992px) {
     .logo {
-    font-size: 15px;
-}
+        font-size: 15px;
+    }
+
     .top-bar {
         margin: 0 auto;
 
@@ -83,8 +88,9 @@
 
     .menu-down li {
         margin: 0 8px !important;
-        &.search_btn{
-            display:block;
+
+        &.search_btn {
+            display: block;
         }
     }
 
@@ -167,4 +173,10 @@
         font-size: 12px;
         font-weight: bold;
     }
+    .nav-tabs-line .nav-item {
+    font-size: 13px;
+}
+.tab-content {
+    padding: 15px;
+}
 }
